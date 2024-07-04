@@ -1,0 +1,17 @@
+[
+  {
+    "id": 111,
+    "name": "comprar leche",
+    "status": true
+  },
+  {
+    "id": 112,
+    "name": "comprar sal",
+    "status": false
+  },
+  {
+    "id": 113,
+    "name": "comprar manteca",
+    "status": true
+  }
+]

@@ -1,0 +1,222 @@
+/* ===== VARIABLES  ===== */
+:root {
+  /* tamaños para contenedores */
+  --spacing-0: 0;
+  --spacing-1: .5rem;
+  --spacing-2: 1rem;
+  --spacing-3: 1.5rem;
+  --spacing-4: 2rem;
+  --spacing-5: 2.5rem;
+  --spacing-6: 3rem;
+  --spacing-7: 3.5rem;
+  --spacing-8: 4rem;
+  --spacing-9: 5rem;
+
+  /* tamaños para fuentes */
+  --size-1: 1rem;    /* Pequeño */
+  --size-2: 1.2rem;  /* Normal */
+  --size-3: 1.4rem;  /* Mediano */
+  --size-4: 1.6rem;  /* Grande */
+  --size-5: 2rem;    /* Muy grande */
+
+  /* colores */
+  --dark-1: #222;
+  --dark-1: #333;
+
+  --light-1: #EEE;
+  --light-2: #DDD;
+
+  --primary-1: #1976D2;
+  --primary-2: #2196F3;
+}
+
+/* ============================== RESET ==============================*/
+* {
+  border: var(--spacing-0);
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  margin: var(--spacing-0);
+  padding: var(--spacing-0);
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: var(--dark-1);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: var(--light-1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--light-2);
+}
+
+/* ============================== ESTILO DE ETIQUETAS ==============================*/
+body {
+  background-color: var(--light-2);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: var(--dark-1);
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+figure {
+  display: flex;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ==================== CLASES ==================== */
+.button {
+  background-color: var(--primary-1);
+  border-radius: var(--spacing-1);
+  color: var(--light-1);
+  cursor: pointer;
+  font-size: var(--size-1);
+  padding: var(--spacing-1) var(--spacing-2);
+}
+
+.button:hover {
+  background-color: var(--primary-2);
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-sm {
+  font-size: var(--size-1);
+}
+
+.text-md {
+  font-size: var(--size-2);
+}
+
+.text-lg {
+  font-size: var(--size-3);
+}
+
+.text-xl {
+  font-size: var(--size-4);
+}
+
+.text-xxl {
+  font-size: var(--size-5);
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.link {
+  color: royalblue;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.p-1 {
+  padding: var(--spacing-1);
+}
+
+.p-2 {
+  padding: var(--spacing-2);
+}
+
+.p-3 {
+  padding: var(--spacing-3);
+}
+
+.m-1 {
+  margin: var(--spacing-1);
+}
+
+.m-2 {
+  margin: var(--spacing-2);
+}
+
+.m-3 {
+  margin: var(--spacing-3);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.content-center {
+  justify-content: center;
+}
+
+.content-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.gap-1 {
+  gap: var(--spacing-1);
+}
+
+.gap-2 {
+  gap: var(--spacing-2);
+}
+
+.gap-3 {
+  gap: var(--spacing-3);
+}
+
+@media (min-width: 991px) {
+  .container {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+}

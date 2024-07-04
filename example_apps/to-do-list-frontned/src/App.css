@@ -1,0 +1,91 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-1);
+  list-style: none;
+  padding-left: 0;
+
+  & li {
+    align-items: center;
+    background-color: var(--dark-1);
+    border-radius: var(--spacing-1);
+    color: var(--light-1);
+    display: flex;
+    justify-content: space-between;
+    padding: var(--spacing-1) var(--spacing-2);
+
+    & div {
+      display: flex;
+      gap: var(--spacing-1);
+    }
+  }
+
+  & li:hover {
+    background-color: var(--dark-2);
+  }
+}
+
+.table {
+  border-collapse: collapse;
+  color: var(--light-1);
+  width: 100%;
+
+  & th,
+  td {
+    padding: var(--spacing-1) var(--spacing-2);
+  }
+
+  & th {
+    background-color: var(--dark-1);
+  }
+
+  & td {
+    background-color: var(--dark-2);
+  }
+
+  & tr:hover {
+    outline: 1px solid var(--light-1);
+  }
+}
+
+.card {
+  background-color: var(--dark-1);
+  border-radius: var(--spacing-1);
+  color: var(--light-1);
+  padding: var(--spacing-1) var(--spacing-2);
+  width: 30%;
+
+  & div {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.card:hover {
+  background-color: var(--dark-2);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-1);
+
+  & div {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+  }
+
+  & input {
+    padding: var(--spacing-1);
+    border-radius: var(--spacing-1);
+  }
+
+  /* & input[type=checkbox] { revisar
+    background-color: purple;
+    padding: var(--spacing-1);
+    border-radius: var(--spacing-1);
+  } */
+}
+
